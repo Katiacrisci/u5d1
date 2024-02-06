@@ -8,9 +8,11 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 
-public class Bevanda {
+public class Bevanda extends Consummation{
 
     private String name;
     private float price;
     private boolean isAlcoholic;
+
+
 }

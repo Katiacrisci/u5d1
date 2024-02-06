@@ -1,4 +1,4 @@
-package Caterina.Crisci.u5d1.models;
+package Caterina.Crisci.u5d1.decorators;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -9,7 +9,7 @@ import lombok.ToString;
 @Setter
 @AllArgsConstructor
 @ToString
-public class Topping {
+public abstract class ToppingDecorator {
 
     private String name;
     private float price;
