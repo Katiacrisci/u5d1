@@ -14,5 +14,4 @@ public class Bevanda extends Consummation{
     private float price;
     private boolean isAlcoholic;
 
-
 }

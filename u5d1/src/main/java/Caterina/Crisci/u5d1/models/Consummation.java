@@ -12,6 +12,9 @@ import lombok.Setter;
 public abstract class Consummation {
     private String name;
 
+    public abstract float getPrice();
+
+
 
 
 

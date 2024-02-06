@@ -5,6 +5,7 @@ import Caterina.Crisci.u5d1.decorators.FriesDecorator;
 import Caterina.Crisci.u5d1.decorators.ProsciuttoDecorator;
 import Caterina.Crisci.u5d1.decorators.WurstelDecorator;
 import Caterina.Crisci.u5d1.models.Pizza;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -30,8 +31,8 @@ public class AppConfig {
         Pizza base = margherita();
         base.setToppings(List.of(new FriesDecorator(), new WurstelDecorator()));
         return base;
-
-
     }
+    @Value("${coperto}")
+    public static int costoCoperto;
 
 }
