@@ -14,4 +14,12 @@ public class Menu {
     private List<Pizza> pizzas;
     private List<Bevanda> bevande;
     private int calories;
+
+    public Menu() {
+
+
+    }
+
+
+
 }

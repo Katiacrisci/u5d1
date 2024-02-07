@@ -1,9 +1,17 @@
 package Caterina.Crisci.u5d1.models;
 
 import Caterina.Crisci.u5d1.configuration.AppConfig;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 
 import java.time.LocalTime;
 import java.util.List;
+@Getter
+@Setter
+@Builder
+@ToString
 
 public class Ordine {
 
