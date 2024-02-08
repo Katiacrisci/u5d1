@@ -8,6 +8,7 @@ import lombok.ToString;
 
 import java.time.LocalTime;
 import java.util.List;
+
 @Getter
 @Setter
 @Builder
@@ -22,11 +23,8 @@ public class Ordine {
     private LocalTime acquisizione;
 
     public float getTotale() {
-      float totaleConsumazioni = consumazioni.stream().map(Consummation::getPrice).reduce(0f, Float::sum);
-      float totaleCoperti = coperti * AppConfig.costoCoperto;
-     return totaleCoperti + totaleConsumazioni;
-
-
-
+        float totaleConsumazioni = consumazioni.stream().map(Consummation::getPrice).reduce(0f, Float::sum);
+        float totaleCoperti = coperti * AppConfig.costoCoperto;
+        return totaleCoperti + totaleConsumazioni;
     }
 }

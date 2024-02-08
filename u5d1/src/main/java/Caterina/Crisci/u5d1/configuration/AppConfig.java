@@ -1,9 +1,9 @@
 package Caterina.Crisci.u5d1.configuration;
 
-import Caterina.Crisci.u5d1.decorators.AnanasDecorator;
-import Caterina.Crisci.u5d1.decorators.FriesDecorator;
-import Caterina.Crisci.u5d1.decorators.ProsciuttoDecorator;
-import Caterina.Crisci.u5d1.decorators.WurstelDecorator;
+import Caterina.Crisci.u5d1.models.decorators.AnanasDecorator;
+import Caterina.Crisci.u5d1.models.decorators.FriesDecorator;
+import Caterina.Crisci.u5d1.models.decorators.ProsciuttoDecorator;
+import Caterina.Crisci.u5d1.models.decorators.WurstelDecorator;
 import Caterina.Crisci.u5d1.models.Menu;
 import Caterina.Crisci.u5d1.models.Pizza;
 import Caterina.Crisci.u5d1.models.Tavolo;

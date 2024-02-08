@@ -1,10 +1,12 @@
-package Caterina.Crisci.u5d1.decorators;
+package Caterina.Crisci.u5d1.models.decorators;
 
-import lombok.Builder;
+import jakarta.persistence.Entity;
 import lombok.Getter;
 
-@Builder
+
 @Getter
+@Entity
+
 public class ProsciuttoDecorator extends ToppingDecorator{
     public ProsciuttoDecorator() {
         super("prosciutto", 0.50f);

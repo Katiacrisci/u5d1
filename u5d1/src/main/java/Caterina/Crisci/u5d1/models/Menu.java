@@ -10,6 +10,7 @@ import java.util.List;
 @Setter
 @AllArgsConstructor
 @ToString
+
 public class Menu {
     private List<Pizza> pizzas;
     private List<Bevanda> bevande;

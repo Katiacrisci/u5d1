@@ -1,6 +1,8 @@
 package Caterina.Crisci.u5d1.models;
 
-import Caterina.Crisci.u5d1.decorators.ToppingDecorator;
+import Caterina.Crisci.u5d1.models.decorators.ToppingDecorator;
+import jakarta.persistence.DiscriminatorValue;
+import jakarta.persistence.Entity;
 import lombok.*;
 
 import java.util.List;
@@ -10,6 +12,8 @@ import java.util.List;
 @AllArgsConstructor
 @ToString
 @Builder
+@Entity
+@DiscriminatorValue(value = "Pizza")
 public class Pizza extends Consummation {
 
     private String name;
